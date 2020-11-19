@@ -19,7 +19,7 @@ INSERT INTO nilai_mahasiswa VALUES
 ('17090308', 'Christine Wijaya', 3.78, 3.23, 3.11);
 ```
 
-#### #### 1. Buat view nilai_ipk yang diambil dari tabel nilai_mahasiswa. View ini terdiri dari kolom nim, nama, dan IPK. Tampilan akhir view adalah sebagai berikut:
+#### 1. Buat view nilai_ipk yang diambil dari tabel nilai_mahasiswa. View ini terdiri dari kolom nim, nama, dan IPK. Tampilan akhir view adalah sebagai berikut:
 ![Tugas 12,1](https://github.com/troy213/tugas_12_mysql/blob/main/Tugas%2012.1%20MySQL.jpg)
 
 (Note: Kolom IPK dalam kasus ini merupakan kolom komputasi, dimana nilainya akan dihitung dari kolom-kolom yang sudah ada. Kolom seperti ini sebaiknya tidak ikut disimpan ke dalam database, tapi cukup dihitung pada saat akan ditampilkan, atau disimpan ke dalam view).
