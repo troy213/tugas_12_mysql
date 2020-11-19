@@ -20,11 +20,13 @@ INSERT INTO nilai_mahasiswa VALUES
 ```
 
 #### #### 1. Buat view nilai_ipk yang diambil dari tabel nilai_mahasiswa. View ini terdiri dari kolom nim, nama, dan IPK. Tampilan akhir view adalah sebagai berikut:
+![Tugas 12,1](https://github.com/troy213/tugas_12_mysql/blob/main/Tugas%2012.1%20MySQL.jpg)
 
 (Note: Kolom IPK dalam kasus ini merupakan kolom komputasi, dimana nilainya akan dihitung dari kolom-kolom yang sudah ada. Kolom seperti ini sebaiknya tidak ikut disimpan ke dalam database, tapi cukup dihitung pada saat akan ditampilkan, atau disimpan ke dalam view).
 
 
 #### 2. Buat view kedua dengan nama nilai_ipk_format. Isi view ini diambil dari view nilai_ipk. Tampilan akhir view adalah sebagai berikut:
+![Tugas 12,2](https://github.com/troy213/tugas_12_mysql/blob/main/Tugas%2012.2%20MySQL.jpg)
 
 Hasil diatas harus terurut dari IPK tertinggi ke terendah. (Tips: gunakan fungsi CONCAT() untuk menggabungkan string, serta query ORDER BY untuk pengurutan).
 
@@ -33,6 +35,7 @@ Hasil diatas harus terurut dari IPK tertinggi ke terendah. (Tips: gunakan fungsi
 
 
 #### 4. Tampilkan mahasiswa yang namanya diawali dengan huruf R. Data ini diambil dari view nilai_ipk_format. Berikut tampilan akhir yang diiginkan:
+![Tugas 12,4](https://github.com/troy213/tugas_12_mysql/blob/main/Tugas%2012.4%20MySQL.jpg)
 
 (Tips: Gunakan query SELECT...LIKE untuk proses seleksi.)
 
