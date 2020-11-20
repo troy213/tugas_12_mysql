@@ -63,6 +63,6 @@ SELECT * FROM nilai_ipk_format WHERE 'Nama dan IPK' LIKE 'R%';
 
 #### 5. Hapus view nilai_ipk dan nilai_ipk_format.
 ```
-DROP VIEW nilai_ipk, DROP VIEW nilai_ipk_format;
+DROP VIEW nilai_ipk, nilai_ipk_format;
 ```
 
