@@ -57,8 +57,16 @@ INSERT INTO nilai_mahasiswa VALUES ('17201120', 'Tritera Erlangga', 3.87, 3.53, 
 
 (Tips: Gunakan query SELECT...LIKE untuk proses seleksi.)
 
+*Note: dikarenakan kita tidak dapat menampilkan nama mahasiswa dengan nama berawalan "R" dari kolom view "Nama dan IPK", serta kita tidak dapat RENAME atau ALTER nama kolom dari view itu sendiri, saya mencoba DROP VIEW nilai_ipk_format dengan nama kolom yang baru*
+
 ```
-SELECT * FROM nilai_ipk_format WHERE 'Nama dan IPK' LIKE 'R%';
+DROP VIEW nilai_ipk_format;
+
+CREATE VIEW nilai_ipk_format AS 
+SELECT CONCAT(nama,' (',IPK,')') AS 'nama_ipk' 
+FROM nilai_ipk ORDER BY ipk DESC;
+
+SELECT nama_ipk AS 'Nama dan IPK' FROM nilai_ipk_format WHERE nama_ipk LIKE 'R%';
 ```
 
 #### 5. Hapus view nilai_ipk dan nilai_ipk_format.
